@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Asteroids Game | Electro Cat Studios</title>
+    <!--  Simple reset to delete the margins  -->
+    <style>
+        body { margin: 0; }
+        canvas { width: 100%; height: 100% }
+    </style>
+    <script src="/js/jquery.min.js"></script>
+
+{% if random %}
+    <script src='js/main.js?t={% print(random) %}'></script>
+    <script src='js/keyHandlerUtils.js?t={% print(random) %}'></script>
+    <script src='js/menu.js?t={% print(random) %}'></script>
+    <script src='js/utils.js?t={% print(random) %}'></script>
+    <script src='js/player.js?t={% print(random) %}'></script>
+    <script src='js/game.js?t={% print(random) %}'></script>
+    <script src='js/asteroid.js?t={% print(random) %}'></script>
+    
+{% else %} 
+    <script src='js/main.js'></script>   
+    <script src='js/keyHandlerUtils.js'></script>   
+    <script src='js/menu.js'></script> 
+    <script src='js/utils.js'></script> 
+    <script src='js/player.js'></script> 
+    <script src='js/game.js'></script> 
+    <script src='js/asteroid.js'></script> 
+{% endif %}
+
+    <style>
+        body{
+            font-family: arial;
+            text-align:center;  
+              
+        }
+        #canvas_div{
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px orange;
+            width:  800px;
+            height: 800px;
+        }
+    </style>
+</head>
+<body onload="loadGame()">
+    <div id='canvas_div'>
+        <canvas id="canvas" width="800" height="800">
+            <p>Your browser does not support the canvas element.</p>
+        </canvas>
+    </div>
+    
+</body>
+</html>
