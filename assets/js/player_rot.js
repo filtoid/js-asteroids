@@ -8,7 +8,7 @@ function Player(x, y, w, h){
 
     this.size = new Location(w, h);
     this.img = new Image();
-    this.img.src = '/img/player.png';
+    this.img.src = '/img/player2.png';
     this.img_loaded = false; 
     this.img.onload = function(){
         player.img_loaded= true;

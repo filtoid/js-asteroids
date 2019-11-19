@@ -1,7 +1,7 @@
 function Asteroid(){
     this.loc = new Location(20, 20);
     this.img = new Image();
-    this.img.src = "/img/asteroid.png";
+    this.img.src = "/img/asteroid2.png";
     this.size = new Location(40, 40);
     this.screen_size = new Location(GAME_SIZE.x, GAME_SIZE.y);
     this.update = AsteroidUpdate;
