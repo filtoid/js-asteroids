@@ -47,5 +47,10 @@ function getRandomInt(min, max) {
         console.log("ERROR: only pass in integers to the function getRandomInt");
     }
     return Math.floor(Math.random() * Math.floor(max)) + Math.floor(min);
-  }
-  
+}
+
+function deg2rad(deg){
+    var output = deg/360;
+    output = output * (2 * Math.PI);
+    return output;
+}
